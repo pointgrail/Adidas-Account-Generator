@@ -13,3 +13,6 @@ python Account Genrator.py
 When you are prompted for the domain enter it. "eg thomas.com"
 
 COOK
+
+
+## adding proxy and threading support soon
