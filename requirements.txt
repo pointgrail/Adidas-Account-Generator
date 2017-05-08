@@ -1,0 +1,4 @@
+fake_factory==0.5.10
+requests==2.13.0
+beautifulsoup4==4.6.0
+Faker==0.7.11
