@@ -4,7 +4,7 @@
 
 ## Info:
 
-- Written for Python 2 only.
+- Written for Python 2.7 only.
 
 - Includes support for US, UK, CA, AU.
 
