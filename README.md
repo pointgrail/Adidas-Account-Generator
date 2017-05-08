@@ -20,5 +20,6 @@
 
 # COOK
 
+## Future Features?
 
-## adding proxy and threading support soon
+- [ ] Add proxy and threading support.
