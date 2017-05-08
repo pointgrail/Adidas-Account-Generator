@@ -1,4 +1,4 @@
-# Adidas-Account-Generator
+# Adidas Account Generator for Custom Domains. 
 
 ### Credit to https://github.com/bopped for original script.
 
@@ -10,7 +10,7 @@
 
 - Requirements: Modules: requests, BeautifulSoup4, faker
 
-- Other requirements: Your own domain set up with catch all email forwarding.
+- Other requirements: Your **own domain set up with catch all email forwarding**
 
 
 ## How to run:
