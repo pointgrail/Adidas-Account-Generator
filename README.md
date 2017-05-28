@@ -10,12 +10,12 @@
 
 - Requirements: Modules: requests, BeautifulSoup4, faker
 
-- Other requirements: Your **own domain set up with catch all email forwarding**
+- Other requirements: **Your own domain set up with catch all email forwarding**
 
 
 ## How to run:
 - CD to the location via Terminal/CMD
-- Python Account Genrator.py
+- Python accountgen.py
 - When you are prompted for the domain enter it. "eg thomas.com"
 
 ## Future Features?
