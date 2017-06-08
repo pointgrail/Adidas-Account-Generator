@@ -1,7 +1,8 @@
-import os, os.path
+import requests, time, os, json, sys
 
-from classes.info import info 
-info = info()
+from classes.info import INFO  
 
-def makeAccount():
-	info()
+start = INFO()
+
+start.info()
+
