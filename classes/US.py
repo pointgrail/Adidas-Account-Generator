@@ -36,24 +36,24 @@ def US(accountsToGen, domain):
 				'Origin': 'https://cp.adidas.com',
 				'Referer': 'https://cp.adidas.com/web/eCom/en_US/loadcreateaccount'})
 		payload = {			
-						   'firstName'					 : first,
-						   'lastName'					 : last,
-						   'minAgeCheck'				 : 'true',
-						   '_minAgeCheck'				 : 'on',
-						   'email'						 : email,
-						   'password'					 : password,
-						   'confirmPassword'			 : password,
-						   '_amf'						 : 'on',
-						   'terms'						 : 'true',
-						   '_terms'						 : 'on',
-						   'metaAttrs[pageLoadedEarlier]': 'true',
-						   'app'						 : 'eCom',
-						   'locale' 					 : 'en_US',
-						   'domain'						 : '',
-						   'consentData1'				 : 'Sign me up for adidas emails, featuring exclusive offers, featuring latest product info, news about upcoming events, and more. See our <a target="_blank" href="https://www.adidas.com/us/help-topics-privacy_policy.html">Policy Policy</a> for details.',
-						   'consentData2'				 : '',
-						   'consentData3'				 : '',
-						   'CSRFToken'					 : csrftoken 
+				   'firstName'				 : first,
+				   'lastName'				 : last,
+				   'minAgeCheck'			 : 'true',
+				   '_minAgeCheck'			 : 'on',
+				   'email'				 : email,
+				   'password'				 : password,
+				   'confirmPassword'			 : password,
+				   '_amf'				 : 'on',
+				   'terms'				 : 'true',
+				   '_terms'				 : 'on',
+				   'metaAttrs[pageLoadedEarlier]'  	 : 'true',
+				   'app'				 : 'eCom',
+				   'locale' 				 : 'en_US',
+				   'domain'			         : '',
+				   'consentData1'			 : 'Sign me up for adidas emails, featuring exclusive offers, featuring latest product info, news about upcoming events, and more. See our <a target="_blank" href="https://www.adidas.com/us/help-topics-privacy_policy.html">Policy Policy</a> for details.',
+				   'consentData2'		         : '',
+				   'consentData3'			 : '',
+				   'CSRFToken'				 : csrftoken 
 				  }
 		r = s.post('https://cp.adidas.com/web/eCom/en_US/accountcreate',data={payload})
 		if not account_successfully_createdUS(r):
