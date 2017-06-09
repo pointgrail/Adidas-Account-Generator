@@ -1,10 +1,10 @@
 from US import USGEN 
-from UK import UK
+from UK import UKGEN
 from AU import AU
 from CA import CA
 
 USGEN = USGEN()
-
+UKGEN = UKGEN()
 
 
 class Info:

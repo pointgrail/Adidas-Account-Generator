@@ -3,13 +3,11 @@ from faker import Faker
 from bs4 import BeautifulSoup
 fake = Faker()
 
+#Import Custom Account Check
+from accountCheck import acctCheck
+acctCheck = acctCheck()
 
 class USGEN:
-	def AccountCheck(self, response):
-		try:
-		  return True if (BeautifulSoup(response.text, "html.parser").find('input', {'name': 'username'})['value'] != "") else False
-		except:
-		  return False
 
 	def US(self, accountsToGen, domain):
 		for i in range(accountsToGen):
@@ -59,10 +57,10 @@ class USGEN:
 					  }
 
 			r = s.post('https://cp.adidas.com/web/eCom/en_US/accountcreate',data=payload)
-			if not self.AccountCheck(r):
+			if not acctCheck.AccountCheck(r):
 				print "Account Exists : Username : %s, Password : %s"  % (email, password)
 
-			if self.AccountCheck(r):
+			if acctCheck.AccountCheck(r):
 				print "Created Account : Username : %s, Password : %s" % (email, password)
 				exit()
 				with open('accountsUS' + '.txt', 'a') as f:
