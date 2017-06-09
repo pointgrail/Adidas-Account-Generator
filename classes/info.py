@@ -1,30 +1,31 @@
-from US import US
-from UK import UK
-from AU import AU
+from US import USGEN 
+from UK import UKGEN
+from AU import AUGEN 
 from CA import CA
 
-class INFO:
-	def info(self):
+USGEN = USGEN()
+UKGEN = UKGEN()
+AUGEN = AUGEN()
+
+
+class Info:
+	def start(self):
+		#washed code 
 		print("Account Generator Ready")
+		
 		location = raw_input('Enter Location US UK CA AU \t')
-		if location == 'US':
-			x = raw_input('Number of accounts to be made:')
-			x = int(x)
-			domain = raw_input('Enter in your domain:')
-			US(x, domain)
+		x 	 = int(raw_input('Number of accounts to be made:\t'))
+		domain   = raw_input('Enter in your domain:')
+		
+		if location == 'US':	
+			USGEN.US(x, domain)
+		
 		if location == 'UK':
-			x = raw_input('Number of accounts to be made:')
-			x = int(x)
-			domain = raw_input('Enter in your domain:')
-			UK(x, domain)
+			UKGEN.UK(x, domain)
+		
 		if location == 'AU':
-			x = raw_input('Number of accounts to be made:')
-			x = int(x)
-			domain = raw_input('Enter in your domain:')
 			AU(x, domain)
+		
 		if location == 'CA':
-			x = raw_input('Number of accounts to be made:')
-			x = int(x)
-			domain = raw_input('Enter in your domain:')
 			CA(x, domain)
 			

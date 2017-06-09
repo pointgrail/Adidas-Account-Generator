@@ -1,8 +1,5 @@
-import requests, time, os, json, sys
+from classes.info import Info  
 
-from classes.info import INFO  
-
-start = INFO()
-
-start.info()
+Main = Info()
+Main.start()
 
