@@ -14,8 +14,8 @@ class Info:
 		print("Account Generator Ready")
 		
 		location = raw_input('Enter Location US UK CA AU \t')
-		x = int(raw_input('Number of accounts to be made:\t'))
-		domain = raw_input('Enter in your domain:')
+		x 	 = int(raw_input('Number of accounts to be made:\t'))
+		domain   = raw_input('Enter in your domain:')
 		
 		if location == 'US':	
 			USGEN.US(x, domain)
