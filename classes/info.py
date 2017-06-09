@@ -3,28 +3,24 @@ from UK import UK
 from AU import AU
 from CA import CA
 
-class INFO:
-	def info(self):
+class Info:
+	def start(self):
 		print("Account Generator Ready")
 		location = raw_input('Enter Location US UK CA AU \t')
 		if location == 'US':
-			x = raw_input('Number of accounts to be made:')
-			x = int(x)
+			x = int(raw_input('Number of accounts to be made:\t'))
 			domain = raw_input('Enter in your domain:')
 			US(x, domain)
 		if location == 'UK':
-			x = raw_input('Number of accounts to be made:')
-			x = int(x)
-			domain = raw_input('Enter in your domain:')
+			x = int(raw_input('Number of accounts to be made:\t'))
+			domain = raw_input('Enter in your domain:\t')
 			UK(x, domain)
 		if location == 'AU':
-			x = raw_input('Number of accounts to be made:')
-			x = int(x)
-			domain = raw_input('Enter in your domain:')
+			x = int(raw_input('Number of accounts to be made:\t'))
+			domain = raw_input('Enter in your domain:\t')
 			AU(x, domain)
 		if location == 'CA':
-			x = raw_input('Number of accounts to be made:')
-			x = int(x)
-			domain = raw_input('Enter in your domain:')
+			x = int(raw_input('Number of accounts to be made:\t'))
+			domain = raw_input('Enter in your domain:\t')
 			CA(x, domain)
 			
