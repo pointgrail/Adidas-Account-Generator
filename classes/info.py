@@ -1,7 +1,12 @@
-from US import US
+from US import USGEN 
 from UK import UK
 from AU import AU
 from CA import CA
+
+USGEN = USGEN()
+
+
+
 
 class Info:
 	def start(self):
@@ -10,7 +15,7 @@ class Info:
 		if location == 'US':
 			x = int(raw_input('Number of accounts to be made:\t'))
 			domain = raw_input('Enter in your domain:')
-			US(x, domain)
+			USGEN.US(x, domain)
 		if location == 'UK':
 			x = int(raw_input('Number of accounts to be made:\t'))
 			domain = raw_input('Enter in your domain:\t')
