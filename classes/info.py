@@ -7,25 +7,24 @@ USGEN = USGEN()
 
 
 
-
 class Info:
 	def start(self):
+		#washed code 
 		print("Account Generator Ready")
+		
 		location = raw_input('Enter Location US UK CA AU \t')
-		if location == 'US':
-			x = int(raw_input('Number of accounts to be made:\t'))
-			domain = raw_input('Enter in your domain:')
+		x = int(raw_input('Number of accounts to be made:\t'))
+		domain = raw_input('Enter in your domain:')
+		
+		if location == 'US':	
 			USGEN.US(x, domain)
+		
 		if location == 'UK':
-			x = int(raw_input('Number of accounts to be made:\t'))
-			domain = raw_input('Enter in your domain:\t')
 			UK(x, domain)
+		
 		if location == 'AU':
-			x = int(raw_input('Number of accounts to be made:\t'))
-			domain = raw_input('Enter in your domain:\t')
 			AU(x, domain)
+		
 		if location == 'CA':
-			x = int(raw_input('Number of accounts to be made:\t'))
-			domain = raw_input('Enter in your domain:\t')
 			CA(x, domain)
 			
